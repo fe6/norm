@@ -40,6 +40,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.7.7",
     "@typescript-eslint/parser": "^2.15.0",
+    "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
     "@vue/eslint-config-airbnb": "^5.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
