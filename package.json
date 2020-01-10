@@ -1,7 +1,7 @@
 {
   "name": "@fe6/norm",
   "description": "fe6 的前端规范",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
     "stylelint": "stylelint ./demo/**/*.scss --fix",
