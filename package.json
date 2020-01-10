@@ -1,7 +1,7 @@
 {
   "name": "@fe6/norm",
   "description": "fe6 的前端规范",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
     "stylelint": "stylelint ./demo/**/*.scss --fix",
@@ -45,6 +45,7 @@
     "@vue/eslint-config-airbnb": "^5.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "babel-eslint": "^10.0.3",
+    "confusing-browser-globals": "^1.0.9",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
@@ -53,14 +54,13 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
     "jest": "^24.9.0",
+    "object.assign": "^4.1.0",
+    "object.entries": "^1.1.1",
     "prettier": "^1.19.1",
     "stylelint": "^12.0.1",
     "stylelint-config-prettier": "^8.0.0",
     "stylelint-prettier": "^1.1.2",
-    "stylelint-webpack-plugin": "^1.1.2",
-    "confusing-browser-globals": "^1.0.9",
-    "object.assign": "^4.1.0",
-    "object.entries": "^1.1.1"
+    "stylelint-webpack-plugin": "^1.1.2"
   },
   "publishConfig": {
     "access": "public"
