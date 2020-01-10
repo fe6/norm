@@ -1,2 +1,2 @@
 # norm
-一些保证代码质量的配置
+一个包含 prettier，eslint，stylelint 的配置文件合集
