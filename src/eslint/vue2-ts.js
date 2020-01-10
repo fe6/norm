@@ -1,13 +1,14 @@
 module.exports = {
   extends: [
-    './jest',
     'plugin:vue/essential',
     '@vue/typescript',
     '@vue/airbnb',
     'plugin:prettier/recommended',
     'prettier/vue',
     'prettier/@typescript-eslint',
-  ].map(require.resolve),
+  ].concat([
+    './jest',
+  ].map(require.resolve)),
   plugins: [
     '@typescript-eslint',
     'vue',
