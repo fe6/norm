@@ -59,7 +59,8 @@
     "stylelint-webpack-plugin": "^1.1.2"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "husky": "^4.0.6"
