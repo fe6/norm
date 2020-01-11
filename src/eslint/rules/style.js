@@ -203,7 +203,7 @@ module.exports = {
       ignoreRegExpLiterals: true,
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
-      ignorePattern: '\\s*import\\s*\\(',
+      ignorePattern: 'component:\\s*()\\s*=>\\s*import\\s*\\(',
     }],
 
     // specify the max number of lines in a file
