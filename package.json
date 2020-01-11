@@ -6,8 +6,7 @@
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
     "stylelint": "stylelint ./demo/**/*.scss --fix",
-    "lint": "yarn jslint && yarn stylelint",
-    "test": "jest"
+    "lint": "yarn jslint && yarn stylelint"
   },
   "files": [
     "src"
@@ -38,6 +37,7 @@
     "stylelint": "^12.0.1"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
     "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
@@ -47,7 +47,6 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-jest": "^23.3.0",
     "eslint-plugin-jsx-control-statements": "^2.2.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.1.2",
@@ -61,5 +60,13 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "husky": "^4.0.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }
