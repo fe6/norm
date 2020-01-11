@@ -1,7 +1,8 @@
 {
   "name": "@fe6/norm",
-  "description": "fe6 的前端规范",
+  "description": "fe6 的代码美化",
   "version": "1.0.3",
+  "main": "index.js",
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
     "stylelint": "stylelint ./demo/**/*.scss --fix",
@@ -42,7 +43,6 @@
     "@typescript-eslint/parser": "^2.15.0",
     "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
-    "@vue/eslint-config-airbnb": "^5.0.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "babel-eslint": "^10.0.3",
     "confusing-browser-globals": "^1.0.9",
