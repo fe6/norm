@@ -1,6 +1,11 @@
 # norm
 一个包含 prettier，eslint，stylelint 的配置文件合集，统一美化标准。
 
+[![@fe6/norm](https://img.shields.io/npm/v/@fe6/norm.svg)](https://www.npmjs.org/package/@fe6/norm)
+[![NPM downloads](http://img.shields.io/npm/dm/@fe6/norm.svg)](https://npmjs.org/package/@fe6/norm)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fe6/norm.svg)
+![GitHub](https://img.shields.io/github/license/fe6/norm)
+
 ## 使用
 
 在 **JavaScript** 的 **Vue 2.x** 项目中的 `.eslintrc.js`
