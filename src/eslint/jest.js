@@ -15,7 +15,6 @@ module.exports = {
     jest: true,
     browser: true,
   },
-  plugins: ['jest'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',

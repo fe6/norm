@@ -11,16 +11,15 @@ module.exports = {
     'jsx-control-statements',
     'prettier',
   ],
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: require.resolve('@vue/cli-service/webpack.config.js'),
-      },
-    },
-  },
   rules: {
     'prettier/prettier': 1,
     'no-param-reassign': ['error', { props: false }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        optionalDependencies: [],
+      },
+    ],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
   },
