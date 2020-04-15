@@ -2,14 +2,13 @@ module.exports = {
   root: true,
   extends: [
     './jest',
-    '@typescript-eslint',
     'plugin:vue/essential',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
     'prettier',
     'prettier/react',
   ],
-  plugins: ['prettier', 'redux-saga', 'react', 'react-hooks', 'jsx-a11y'],
+  plugins: ['@typescript-eslint', 'prettier', 'redux-saga', 'react', 'react-hooks', 'jsx-a11y'],
   env: {
     browser: true,
     node: true,
