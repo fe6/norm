@@ -245,10 +245,6 @@ module.exports = {
     }, {
       property: '__defineSetter__',
       message: 'Please use Object.defineProperty instead.',
-    }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.',
     }],
 
     // disallow use of assignment in return statement
