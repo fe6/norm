@@ -60,6 +60,6 @@ module.exports = {
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
     'redux-saga/no-yield-in-race': 2,
-    'redux-saga/yield-effects': 2,
+    'redux-saga/yield-effects': 0,
   },
 };
