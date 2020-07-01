@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
-    "stylelint": "stylelint ./demo/**/*.scss",
+    "stylelint": "stylelint ./demo/**/*.scss --fix",
     "lint": "yarn jslint && yarn stylelint"
   },
   "files": [
