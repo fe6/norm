@@ -41,6 +41,18 @@ module.exports = {
 };
 ```
 
+在普通的 **TypeScript** 项目中的 `.eslintrc.js`
+> 3.0.0 中新增
+
+```ts
+module.exports = {
+  extends: [require.resolve('@fe6/norm/src/eslint/ts')],
+  rules: {
+    // your rules
+  },
+};
+```
+
 在有 **jest** 普通的 **JavaScript** 项目中的 `.eslintrc.js`
 
 ```js
