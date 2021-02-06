@@ -42,7 +42,7 @@ module.exports = {
 ```
 
 在普通的 **TypeScript** 项目中的 `.eslintrc.js`
-> 2.2.0 中新增
+> 3.0.0 中新增
 
 ```ts
 module.exports = {

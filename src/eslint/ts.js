@@ -9,8 +9,10 @@ const strict = require('./rules/strict').rules;
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaVersion: 2019,
     sourceType: 'module',
   },
+  plugins: ['@typescript-eslint'],
   rules: {
     ...practices,
     ...errors,
