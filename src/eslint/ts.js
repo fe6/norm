@@ -25,12 +25,12 @@ module.exports = {
       'error',
       // we are only using this rule to check for unused arguments since TS
       // catches unused variables but not args.
-      { varsIgnorePattern: '.*', args: 'none' }
+      { varsIgnorePattern: '.*', args: 'none' },
     ],
     // note you must disable the base rule as it can report incorrect errors
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"]
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
   },
   env: {
     es6: true,
