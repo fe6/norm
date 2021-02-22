@@ -1,26 +1,28 @@
-const practices = require('./rules/best-practices').rules;
-const errors = require('./rules/errors').rules;
-const node = require('./rules/node').rules;
-const style = require('./rules/style').rules;
-const variables = require('./rules/variables').rules;
-const es6 = require('./rules/es6').rules;
-const strict = require('./rules/strict').rules;
-
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
+  extends: [
+    ...[
+      './rules/best-practices',
+      './rules/errors',
+      './rules/node',
+      './rules/style',
+      './rules/variables',
+      './rules/es6',
+      './rules/imports',
+      './rules/strict',
+    ].map(require.resolve),
+    'plugin:prettier/recommended',
+    'prettier/vue',
+    'prettier/@typescript-eslint',
+  ],
+  plugins: ['@typescript-eslint',
+  'prettier',],
   rules: {
-    ...practices,
-    ...errors,
-    ...node,
-    ...style,
-    ...variables,
-    ...es6,
-    ...strict,
+    'prettier/prettier': 1,
     'no-unused-vars': [
       'error',
       // we are only using this rule to check for unused arguments since TS
