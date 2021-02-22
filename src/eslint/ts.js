@@ -20,7 +20,7 @@ module.exports = {
     'prettier/@typescript-eslint',
   ],
   plugins: ['@typescript-eslint',
-  'prettier',],
+    'prettier'],
   rules: {
     'prettier/prettier': 1,
     'no-unused-vars': [
