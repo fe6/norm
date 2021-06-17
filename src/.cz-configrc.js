@@ -14,7 +14,15 @@ module.exports = {
     },
     {
       value: 'refactor',
-      name: '🛠   refactor:        既不修复 bug 也不添加特性，如改个文案，换个图片等',
+      name: '🛠   refactor:        代码重构',
+    },
+    {
+      value: 'update',
+      name: '♻️   update:          更新代码，处理冲突',
+    },
+    {
+      value: 'trivia',
+      name: '🩴   trivia:          琐事，如改个文案，换个图片等',
     },
     {
       value: 'docs',
@@ -30,7 +38,7 @@ module.exports = {
     },
     {
       value: 'lint',
-      name: '🩺  lint:            代码规范修改',
+      name: '🪛   lint:            代码规范修改',
     },
     {
       value: 'release',
