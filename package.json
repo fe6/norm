@@ -6,7 +6,8 @@
   "scripts": {
     "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
     "stylelint": "stylelint ./demo/**/*.scss --fix",
-    "lint": "yarn jslint && yarn stylelint"
+    "lint": "yarn jslint && yarn stylelint",
+    "cz": "cz"
   },
   "files": [
     "src"
@@ -32,18 +33,25 @@
   },
   "homepage": "https://github.com/fe6/norm#readme",
   "dependencies": {
+    "@antfu/eslint-config": "^0.6.6",
+    "@antfu/ni": "^0.7.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "@vue/cli-plugin-eslint": "^4.1.2",
     "@vue/cli-plugin-typescript": "^4.1.2",
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-eslint": "^10.0.3",
+    "commitizen": "^4.2.4",
     "confusing-browser-globals": "^1.0.9",
+    "cz-customizable": "^6.3.0",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-jsx-control-statements": "^2.2.1",
+    "eslint-plugin-markdown": "^2.2.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -67,6 +75,14 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./src/.cz-configrc.js"
     }
   }
 }
