@@ -42,7 +42,7 @@ module.exports = {
       files: ['*.md', '*.vue', '*.ts', '*.tsx', 'scripts/*.ts'],
       rules: {
         'no-console': 'warn',
-        'no-undef': 'error',
+        'no-undef': 'off',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
       },
