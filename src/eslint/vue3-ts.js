@@ -25,7 +25,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/no-string-refs': 'off',
     'no-new': 'off',
-    semi: 'off',
+    'semi': 'off',
     'comma-dangle': ['error', 'only-multiline'],
     'import/order': 'off',
     'react/no-unknown-property': 'off',
@@ -36,6 +36,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/semi': ['error', 'always'],
+    'indent': 'off',
+    '@typescript-eslint/indent': ["error", 2]
   },
   overrides: [
     {
