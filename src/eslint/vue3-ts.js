@@ -25,6 +25,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/no-string-refs': 'off',
     'no-new': 'off',
+    curly: ['error', 'all'],
     semi: 'off',
     'comma-dangle': ['error', 'only-multiline'],
     'import/order': 'off',
