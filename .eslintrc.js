@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './src/eslint/jest',
+    './src/eslint/taro-vue3-ts',
   ].map(require.resolve),
   rules: {},
 };
