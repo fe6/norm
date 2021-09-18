@@ -70,6 +70,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "peerDependencies": {
+    "eslint": "^7.32.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.9.0"
+  },
   "devDependencies": {
     "husky": "^4.0.6"
   },
