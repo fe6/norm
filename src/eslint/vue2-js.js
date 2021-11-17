@@ -24,6 +24,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
   },
 };
