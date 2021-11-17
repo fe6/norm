@@ -17,6 +17,10 @@ module.exports = {
       name: '🛠   refactor:        代码重构',
     },
     {
+      value: 'style',
+      name: '🔎  style:           修改样式',
+    },
+    {
       value: 'update',
       name: '♻️   update:          更新代码，处理冲突',
     },
