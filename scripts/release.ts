@@ -6,7 +6,7 @@
 
 import fs from "fs";
 import prompts from "prompts";
-import { execa } from "execa";
+import execa from "execa";
 import semver from "semver";
 import { resolve } from "path";
 
