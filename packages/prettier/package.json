@@ -1,0 +1,31 @@
+{
+  "name": "@fe6/norm-prettier",
+  "version": "0.0.0",
+  "description": "Prettier config",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "@fe6/norm",
+    "@fe6/norm-prettier",
+    "prettier"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe6/norm.git",
+    "directory": "packages/prettier"
+  },
+  "dependencies": {
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
+  },
+  "author": "tianyi <649076408@qq.com>",
+  "license": "MIT"
+}

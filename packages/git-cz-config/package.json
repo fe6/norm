@@ -1,0 +1,32 @@
+{
+  "name": "@fe6/norm-git-cz-config",
+  "version": "0.0.0",
+  "description": "Git 提交信息的管理",
+  "files": [
+    "index.js",
+    "commitlint.config.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "@fe6/norm",
+    "@fe6/norm-git-cz-config",
+    "@fe6/norm-git",
+    "@fe6/norm-git-cz",
+    "git cz",
+    "git-cz",
+    "git"
+  ],
+  "main": "commitlint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe6/norm.git",
+    "directory": "packages/git-cz-config"
+  },
+  "author": "tianyi <649076408@qq.com>",
+  "license": "MIT"
+}
