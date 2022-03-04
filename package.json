@@ -19,12 +19,20 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@fe6/norm-git-cz-config": "workspace:^",
     "@fe6/norm-prettier": "workspace:^",
+    "@types/node": "^17.0.21",
+    "@types/prompts": "^2.0.14",
+    "@types/semver": "^7.3.9",
     "chalk": "^5.0.0",
     "conventional-changelog-cli": "^2.2.2",
     "cz-customizable": "^6.3.0",
+    "execa": "^6.1.0",
     "husky": "^7.0.2",
     "prettier": "^2.5.1",
-    "pretty-quick": "^3.1.3"
+    "pretty-quick": "^3.1.3",
+    "prompts": "^2.4.2",
+    "semver": "^7.3.5",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
   },
   "publishConfig": {
     "access": "public"

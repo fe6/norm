@@ -4,11 +4,11 @@
  * @format
  */
 
-const fs = require("fs");
-const prompts = require("prompts");
-const execa = require("execa");
-const semver = require("semver");
-const { resolve } = require("path");
+import fs from "fs";
+import prompts from "prompts";
+import { execa } from "execa";
+import semver from "semver";
+import { resolve } from "path";
 
 import { errorLog, log } from "./logger";
 
@@ -16,28 +16,29 @@ import { VERSION_INCREMENTS, PACKAGE_TYPE } from "./config";
 
 const args = require("minimist")(process.argv.slice(2));
 
-const testVersion = (tVersion) => {
+const testVersion = (tVersion: string) => {
   if (!semver.valid(tVersion)) {
     errorLog(`无效的目标版本 -> ${tVersion}`, true);
   }
 };
 
 const isDryRun = args.dry;
-const skipBuild = args.skipBuild;
+const skipBuild: boolean = args.skipBuild;
 
-const run = (bin, args, opts) => execa(bin, args, { stdio: "inherit", ...opts });
+const run = (bin: string, args: string[], opts: object = {}) =>
+  execa(bin, args, { stdio: "inherit", ...opts });
 
-const dryRun = (bin, args) => log(`[dryrun] ${bin} ${args.join(" ")}`);
+const dryRun = (bin: string, args: string[]) => log(`[dryrun] ${bin} ${args.join(" ")}`);
 
 const runIfNotDry = isDryRun ? dryRun : run;
 
-function updateVersion(pkgFile, version) {
+function updateVersion(pkgFile: string, version: string) {
   const pkg = JSON.parse(fs.readFileSync(pkgFile, "utf-8"));
   pkg.version = version;
   fs.writeFileSync(pkgFile, `${JSON.stringify(pkg, null, 2)}\n`);
 }
 
-async function publishPackage(pkgName, version) {
+async function publishPackage(pkgName: string, version: string) {
   const publicArgs = [
     "publish",
     "--new-version",
@@ -53,7 +54,7 @@ async function publishPackage(pkgName, version) {
     log("");
     log(`发布成功 ${pkgName}@${version}`);
     log("");
-  } catch (e) {
+  } catch (e: any) {
     if (e.stderr.match(/previously published/)) {
       log("");
       log(`跳过已发布的: ${pkgName}`);
@@ -64,7 +65,7 @@ async function publishPackage(pkgName, version) {
   }
 }
 
-export async function goRelease(version) {
+export async function goRelease(version: string) {
   let targetVersion = version;
   const pkgDir = process.cwd();
   const pkgPath = resolve(pkgDir, "package.json");
@@ -73,19 +74,19 @@ export async function goRelease(version) {
 
   if (!targetVersion) {
     const currentVersion = pkg.version;
-    const inc = (i) => semver.inc(currentVersion, i, "beta");
+    const inc = (i: semver.ReleaseType) => semver.inc(currentVersion, i, "beta");
     const { release } = await prompts({
       type: "select",
       name: "release",
       message: "选择发布版本",
-      choices: VERSION_INCREMENTS.map((i) => `${i}: (${inc(i)})`)
+      choices: VERSION_INCREMENTS.map((i: semver.ReleaseType) => `${i}: (${inc(i)})`)
         .concat(["custom"])
         .map((i) => ({ value: i, title: i })),
     });
 
     if (release === "custom") {
       /**
-       * @type {{ version }}
+       * @type {{ version: string }}
        */
       const res = await prompts({
         type: "text",
