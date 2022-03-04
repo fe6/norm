@@ -9,6 +9,10 @@ module.exports = {
       name: "✨  feat:            新功能",
     },
     {
+      value: "config",
+      name: "⚙️   config:          各种项目配置",
+    },
+    {
       value: "fix",
       name: "🐞  fix:             bug 修复",
     },

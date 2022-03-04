@@ -1,13 +1,9 @@
 {
-  "name": "@fe6/norm",
-  "description": "fe6 的代码美化",
-  "version": "3.5.1",
-  "main": "index.js",
+  "name": "norm-monorepo",
+  "description": "fe6 的代码规范集合",
   "scripts": {
-    "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
-    "stylelint": "stylelint ./demo/**/*.scss --fix",
-    "lint": "yarn jslint && yarn stylelint",
-    "cz": "cz"
+    "lint": "pretty-quick",
+    "husky": "husky install"
   },
   "engines": {
     "node": ">= 16"
@@ -23,7 +19,8 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@fe6/norm-git-cz-config": "workspace:^",
     "@fe6/norm-prettier": "workspace:^",
-    "conventional-changelog-cli": "^2.1.1",
+    "chalk": "^5.0.0",
+    "conventional-changelog-cli": "^2.2.2",
     "cz-customizable": "^6.3.0",
     "husky": "^7.0.2",
     "prettier": "^2.5.1",

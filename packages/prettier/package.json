@@ -2,6 +2,10 @@
   "name": "@fe6/norm-prettier",
   "version": "0.0.0",
   "description": "Prettier config",
+  "scripts": {
+    "release": "node ../../scripts/release.js prettier",
+    "changelog": "conventional-changelog -p angular -i changelog.md -s --commit-path . --lerna-package prettier"
+  },
   "files": [
     "index.js"
   ],
