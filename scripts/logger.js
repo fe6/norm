@@ -1,6 +1,6 @@
 /** @format */
 
-import chalk from "chalk";
+const chalk = require("chalk");
 
 export const errorLog = (msg, end) => {
   // eslint-disable-next-line no-console

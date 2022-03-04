@@ -4,11 +4,11 @@
  * @format
  */
 
-import fs from "fs";
-import prompts from "prompts";
-import execa from "execa";
-import semver from "semver";
-import { resolve } from "path";
+const fs = require("fs");
+const prompts = require("prompts");
+const execa = require("execa");
+const semver = require("semver");
+const { resolve } = require("path");
 
 import { errorLog, log } from "./logger";
 
