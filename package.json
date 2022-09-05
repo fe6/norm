@@ -6,8 +6,10 @@
     "husky": "husky install"
   },
   "engines": {
-    "node": ">= 16"
+    "node": ">= 16.13.0",
+    "pnpm": ">=7.9"
   },
+  "packageManager": "pnpm@7.9.0",
   "author": "李梦龙 <649076408@qq.com>",
   "license": "MIT",
   "bugs": {
@@ -37,7 +39,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@6.32.0",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-customizable"
