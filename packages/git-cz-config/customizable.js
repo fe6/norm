@@ -1,8 +1,8 @@
 module.exports = {
   types: [
     {
-      value: "WIP",
-      name: "🎯  WIP:             正在进行的工作",
+      value: "wip",
+      name: "🎯  wip:             正在进行的工作",
     },
     {
       value: "feat",
