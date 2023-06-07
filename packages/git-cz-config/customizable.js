@@ -1,10 +1,6 @@
 module.exports = {
   types: [
     {
-      value: "wip",
-      name: "🎯  wip:             正在进行的工作",
-    },
-    {
       value: "feat",
       name: "✨  feat:            新功能",
     },
@@ -49,6 +45,14 @@ module.exports = {
       name: "🏁  test:            添加缺少的测试或更正现有测试",
     },
     {
+      value: "plus",
+      name: "📈  plus:            优化",
+    },
+    {
+      value: "del",
+      name: "🗑️   del:             删除一些东西",
+    },
+    {
       value: "chore",
       name: "🗯   chore:           不修改项目代码。例如更新生成任务、包管理器、项目配置等",
     },
@@ -67,6 +71,10 @@ module.exports = {
     {
       value: "follow",
       name: "🚗  follow:          追随上一个的提交",
+    },
+    {
+      value: "wip",
+      name: "🎯  wip:             正在进行的工作",
     },
     {
       value: "others",

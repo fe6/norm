@@ -7,7 +7,7 @@
     "changelog": "conventional-changelog -p angular -i changelog.md -s --commit-path . --lerna-package prettier"
   },
   "files": [
-    "index.js"
+    "index.json"
   ],
   "publishConfig": {
     "access": "public"
@@ -20,7 +20,7 @@
     "@fe6/norm-prettier",
     "prettier"
   ],
-  "main": "index.js",
+  "main": "index.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fe6/norm.git",
