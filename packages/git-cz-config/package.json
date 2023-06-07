@@ -1,6 +1,6 @@
 {
   "name": "@fe6/norm-git-cz-config",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Git 提交信息的管理",
   "scripts": {
     "release": "ts-node ../../scripts/release.ts git-cz-config",
