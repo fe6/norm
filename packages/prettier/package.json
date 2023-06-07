@@ -1,6 +1,6 @@
 {
   "name": "@fe6/norm-prettier",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Prettier config",
   "scripts": {
     "release": "ts-node ../../scripts/release.ts prettier",
